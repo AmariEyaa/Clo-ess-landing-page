@@ -190,6 +190,14 @@
             const navMenu = document.querySelector('.navmenu');
             navMenu.classList.toggle('active');
         }
+
+        // Fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.navmenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.querySelector('.navmenu');
+                navMenu.classList.remove('active');
+            });
+        });
     </script>
 
 </body>
