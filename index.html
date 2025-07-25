@@ -39,6 +39,9 @@
                 <a href="#"><i class='bx bx-search'></i> </a>
                 <a href="#"><i class='bx bx-user'></i> </a>
                 <a href="#"><i class='bx bx-cart'></i> </a>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class='bx bx-menu'></i>
+                </button>
             </div>
         
     </header>
@@ -181,6 +184,13 @@
             <p>&copy; 2025 Clo'ess. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.navmenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>

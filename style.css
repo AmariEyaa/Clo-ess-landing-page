@@ -77,6 +77,11 @@ header{
     cursor: pointer;
 }
 
+/* Bouton menu mobile (caché par défaut) */
+.menu-toggle{
+    display: none;
+}
+
 /* Espacement des sections */
 .section{
     padding: 5% 10%;
@@ -505,6 +510,41 @@ footer{
 
 /* Design Responsive */
 @media (max-width: 768px){
+    header{
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+    .navmenu{
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        display: none;
+    }
+    .navmenu.active{
+        display: flex;
+    }
+    .navmenu a{
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-icon{
+        position: relative;
+    }
+    .menu-toggle{
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #1C1C1C;
+        cursor: pointer;
+    }
+    .menu-toggle:hover{
+        color: #C87941;
+    }
     .main-section{
         padding: 0 4%;
         text-align: center;
